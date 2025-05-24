@@ -23,9 +23,9 @@
 
     4.2. A ray is fired along $-\hat{y}$, as some meshes include the roof of the mouth. This easily catches any of those whos third principal component, the one which aligns normal the roof of the mouth, is anti-aligned with $\hat{y}$. They get rotated $\pi$ about $\hat{z}$.
 
-5. The meshes which still lie upside-down do not have roofs for a raycast check to intersect, but the meshes are orientable with surface element normals. Since these meshes are idealized as a partial tori specified by $\phi,\theta$ over toroidal angle $\phi\in[0,\pi]$, poloidal angle $\theta\in[\pi,2\pi]$, there are theoretically 0 surface normals with a component along $+\hat{y}$. Therefore if  $\sum^{N}_{i=1}{\hat{n_i}\cdot\hat{y}} \geq 0$,  the mesh gets a $\pi$ rotation about $\hat{z}$. $^\dag$ 
+5. The meshes which still lie upside-down do not have roofs for a raycast check to intersect, but the meshes are orientable with surface element normals. Since these meshes are idealized as a partial tori specified by $\phi,\theta$ over toroidal angle $\phi\in[0,\pi]$ and  poloidal angle $\theta\in[\pi,2\pi]$, there are theoretically 0 surface normals with a component along $+\hat{y}$. Therefore if  $\sum^{N}_{i=1}{\hat{n_i}\cdot\hat{y}} \geq 0$,  the mesh gets a $\pi$ rotation about $\hat{z}$.
 
-    ${^\dag}$ $\textit{yes I recognized afterwords this this makes}$ 4.2 $\textit{redundant}$
+  $\textit{yes I recognized afterwords this this makes}$ 4.2 $\textit{redundant}$
 
 6. The meshes could still use some final adjustments to fix minor tilt about $\hat{z}$, so we can flatten their downsampled point clouds along a the principal axis aligned with it, PC1, and treat the points in the [PC1=0,PC2,PC3] plane as a distribution. The best fit slope should lie as parallel to $\hat{x}$ as possible, so we can find the angle between them and construct the proper rotation matrix to correct.
 

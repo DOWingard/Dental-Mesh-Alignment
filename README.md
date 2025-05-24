@@ -27,7 +27,7 @@
 
     ${^\dag}$ $\textit{yes I recognized afterwords this this makes}$ 4.2 $\textit{redundant}$
 
-6. The meshes could still use some final adjustments to fix minor tilt about $\hat{x}$ and $\hat{z}$, so we can flatten their downsampled point clouds along a principal axis aligned with them, for example PC1 with $\hat{z}$ and treat the points in the [PC1=0,PC2,PC3] plane as a distribution. The best fit slope should lie as parallel to $\hat{x}$ as possible, so we can find the angle between them and construct the proper rotation matrix to correct.
+6. The meshes could still use some final adjustments to fix minor tilt about $\hat{z}$, so we can flatten their downsampled point clouds along a the principal axis aligned with it, PC1, and treat the points in the [PC1=0,PC2,PC3] plane as a distribution. The best fit slope should lie as parallel to $\hat{x}$ as possible, so we can find the angle between them and construct the proper rotation matrix to correct.
 
 <img src="images/flat1.png" alt="Oriented Dental Scan" width="400">
 

@@ -23,7 +23,7 @@
 
     4.2. A ray is fired along $-\hat{y}$, as some meshes include the roof of the mouth. This easily catches any of those whos third principal component, the one which aligns normal the roof of the mouth, is anti-aligned with $\hat{y}$. They get rotated $\pi$ about $\hat{z}$.
 
-5. The meshes which still lie upside-down do not have roofs for a raycast check to intersect, but the meshes are orientable with surface element normals. Since these meshes are idealized as a partial tori specified by $\phi,\theta$ over toroidal angle $\phi\in[0,pi]$, poloidal angle $\theta\in[\pi,2\pi]$, there are theoretically 0 surface normals with a component along $\hat{+y}$. Therefore if  $\sum^{N}_{i=1}{\hat{n_i}\cdot\hat{y}} \geq 0$,  the mesh gets a $\pi$ rotation about $\hat{z}$. $^\dag$ 
+5. The meshes which still lie upside-down do not have roofs for a raycast check to intersect, but the meshes are orientable with surface element normals. Since these meshes are idealized as a partial tori specified by $\phi,\theta$ over toroidal angle $\phi\in[0,\pi]$, poloidal angle $\theta\in[\pi,2\pi]$, there are theoretically 0 surface normals with a component along $\hat{+y}$. Therefore if  $\sum^{N}_{i=1}{\hat{n_i}\cdot\hat{y}} \geq 0$,  the mesh gets a $\pi$ rotation about $\hat{z}$. $^\dag$ 
 
     ${^\dag}$ $\textit{yes I recognized afterwords this this makes}$ 4.2 $\textit{redundant}$
 

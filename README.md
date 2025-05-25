@@ -4,7 +4,7 @@
 ## This code takes .stl files of dental mouth scans 
 <img src="images\variation3.png" alt="Unoriented Dental Scan" width="400">
 
-## and returns them all oriented with the incisors centered at (0,0,0), facing the viewer (or optionally vertically, teeth pointing at the viewer)
+## and returns them all oriented with the incisors centered at (0,0,0), facing the viewer (or optionally vertically, teeth facing upwards)
 <img src="images/oriented_mesh.png" alt="Oriented Dental Scan" width="400">.
 
 ## The method is as follows:
